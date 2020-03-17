@@ -16,72 +16,66 @@
     <div class="contaner">
       <div class="title">
         <div class="title-img">
-          <img class="img arab" height= "80px" width= "65px" src="img\dance_arab_odoriko.png">
-          <img class="img samba" height= "80px" width= "65px" src="img\dance_samba_woman.png">
+          <img class="img arab" height= "80px" width= "65px" src="dance_arab_odoriko.png">
+          <img class="img samba" height= "80px" width= "65px" src="dance_samba_woman.png">
           <h3>What show are you gonna see...</h4>
         </div>
       </div>
       <div class="btns">
         <div class="btn start">
-          <a class="btn-push" id="btn-start" href="#"><span class="fas fa-hand-point-right"></span>push!</a>
-  
+          <a class="btn-push" id="btn-start" href="#"><span class="fas fa-hand-point-right"></span>push!</a> 
         </div> 
       </div>
-    
       <div class="result">
         <h4>Let's see トロピカル スプラッシュ！</h4>
-        <div class="partys" id="party-img">
-          
-        </div>
-        <div class="partys" id="party-test"></div>
+        <div class="partys" id="party-img"></div>
+        <div class="partys" id="party-text"></div>
         <script language="javascript" type="text/javascript">
           var target = document.getElementById( 'party-img' );
-          var targetTest = document.getElementById( 'party-test' );
+          var targetText = document.getElementById( 'party-text' );
           var bt = document.getElementById( 'btn-start' );
           bt.addEventListener( 'click', function( e ) {
             var imglist = [
-              "img/fruit_banana.png",
-              "img/fruit_pineapple.png",
-              "img/fruit_mango.png",
-              "img/fruit_dragonfruit.png",
-              "img/nougyou_saigai_shinpai_yasai.png",
-              "img/nakayoshi_world_kids_run.png"
+              "fruit_banana.png",
+              "fruit_pineapple.png",
+              "fruit_mango.png",
+              "fruit_dragonfruit.png",
+              "nougyou_saigai_shinpai_yasai.png",
+              "nakayoshi_world_kids_run.png"
             ];
             var selectnum = Math.floor(Math.random() * imglist.length);
-            var test = "ちょっとまってね"
+            var text = "ちょっとまってね"
             switch (selectnum){
               case 0:
-                test = "バ！バ！バナナ！！";
+                text = "バ！バ！バナナ！！";
                 break; 
               case 1:
-                test = "パイナップルダンスを踊ろう♫";
+                text = "パイナップルダンスを踊ろう♫";
                 break;
               case 2:
-                test = "マンゴーをもって<br>サンバしよう♪";
+                text = "マンゴーをもって<br>サンバしよう♪";
                 break;
               case 3:
-                test = "ドラゴンフルーツを育てよう";
+                text = "ドラゴンフルーツを育てよう";
                 break;
               case 4:
-                test = "トロピカール、ストーーーーム！！！";
+                text = "トロピカール、ストーーーーム！！！";
                 break;
               case 5:
-                test = "こいっ！こいっ！こいこいっこい！";
+                text = "こいっ！こいっ！こいこいっこい！";
                 break;	
 		          default:
-                test = "ちょっとまってね";
+                text = "ちょっとまってね";
 			          break;
           }
           var element = '<img class="result-img" src="' + imglist[ selectnum ] + '" height= "160px" width= "130px" alt="resultimg" >';
           target.innerHTML = element;
-          var elementTest ='<p class="resulttext">'+test+'</p>'
-          targetTest.innerHTML = elementTest;  
+          var elementText ='<p class="resulttext">'+text+'</p>'
+          targetText.innerHTML = elementText;  
           }, false );
           </script>
       </div>
     </div>
-
-
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
