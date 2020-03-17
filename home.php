@@ -15,8 +15,8 @@
     <div class="contaner">
       <div class="title">
         <div class="title-img">
-          <img class="img arab" height= "80px" width= "65px" src="img\dance_arab_odoriko.png">
-          <img class="img samba" height= "80px" width= "65px" src="img\dance_samba_woman.png">
+          <img class="img arab" height= "80px" width= "65px" src="dance_arab_odoriko.png">
+          <img class="img samba" height= "80px" width= "65px" src="dance_samba_woman.png">
           <h3>What show are you gonna see...</h4>
         </div>
       </div>
@@ -41,22 +41,22 @@
         </script>-
         <input id="php2jquery" type="hidden" value="<?php $number; ?>" name="php2jquery">
           <div class="party">
-            <img class="img banana" src="img\fruit_banana.png">
+            <img class="img banana" src="fruit_banana.png">
           </div>
           <div class="party">
-            <img class="img pineapple" src="img\fruit_pineapple.png">
+            <img class="img pineapple" src="fruit_pineapple.png">
           </div>
           <div class="party">
-            <img class="img mango" src="img\fruit_mango.png">
+            <img class="img mango" src="fruit_mango.png">
           </div>
           <div class="party">
-            <img class="img dragonfruit" src="img\fruit_dragonfruit.png">
+            <img class="img dragonfruit" src="fruit_dragonfruit.png">
           </div>
           <div class="party">
-            <img class="img kiwi" src="img\fruit_kiwi_green.png">
+            <img class="img kiwi" src="fruit_kiwi_green.png">
           </div>
           <div class="party">
-            <img class="img kiwi" src="img\nakayoshi_world_kids_run.png">
+            <img class="img kiwi" src="nakayoshi_world_kids_run.png">
           </div>
         </div>
         <p id="result-text"></p>
