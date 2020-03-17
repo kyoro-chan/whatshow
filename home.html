@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>今日は何のショーを見る？</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="contaner">
+      <div class="title">
+        <div class="title-img">
+          <img class="img arab" height= "80px" width= "65px" src="img\dance_arab_odoriko.png">
+          <img class="img samba" height= "80px" width= "65px" src="img\dance_samba_woman.png">
+          <h3>What show are you gonna see...</h4>
+        </div>
+      </div>
+      <div class="btns">
+        <div class="btn start">
+          <a class="btn-push" id="btn-start" href="#"><span class="fas fa-hand-point-right"></span>push!</a>
+  
+        </div> 
+      </div>
+    
+      <div class="result">
+        <h4>Let's see トロピカル スプラッシュ！</h4>
+        <div class="partys" id="party-img">
+          
+        </div>
+        <div class="partys" id="party-test"></div>
+        <script language="javascript" type="text/javascript">
+          var target = document.getElementById( 'party-img' );
+          var targetTest = document.getElementById( 'party-test' );
+          var bt = document.getElementById( 'btn-start' );
+          bt.addEventListener( 'click', function( e ) {
+            var imglist = [
+              "img/fruit_banana.png",
+              "img/fruit_pineapple.png",
+              "img/fruit_mango.png",
+              "img/fruit_dragonfruit.png",
+              "img/nougyou_saigai_shinpai_yasai.png",
+              "img/nakayoshi_world_kids_run.png"
+            ];
+            var selectnum = Math.floor(Math.random() * imglist.length);
+            var test = "ちょっとまってね"
+            switch (selectnum){
+              case 0:
+                test = "バ！バ！バナナ！！";
+                break; 
+              case 1:
+                test = "パイナップルダンスを踊ろう♫";
+                break;
+              case 2:
+                test = "マンゴーをもって<br>サンバしよう♪";
+                break;
+              case 3:
+                test = "ドラゴンフルーツを育てよう";
+                break;
+              case 4:
+                test = "トロピカール、ストーーーーム！！！";
+                break;
+              case 5:
+                test = "こいっ！こいっ！こいこいっこい！";
+                break;	
+		          default:
+                test = "ちょっとまってね";
+			          break;
+          }
+          var element = '<img class="result-img" src="' + imglist[ selectnum ] + '" height= "160px" width= "130px" alt="resultimg" >';
+          target.innerHTML = element;
+          var elementTest ='<p class="resulttext">'+test+'</p>'
+          targetTest.innerHTML = elementTest;  
+          }, false );
+          </script>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
